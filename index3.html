@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="style3.css" rel="stylesheet">
+    <script src="test.js"></script>
 </head>
 <body >
 <h1>  登录到系统</h1>
-<form>
+
     <hr>
     <div>
         <label>
-            <input type="text" placeholder="用户名">
+            <input  type="text" placeholder="用户名" >
         </label>
     </div>
     <div>
          <label>
-            <input type="text" placeholder="密码">
+            <input id="pwd" class="illegal-pwd"   type="text" placeholder="密码"   oninput="checkIllegal(this)"  >
         </label>
     </div>
     <div>
-        <button>登录</button>
+        <button onclick="http()">登录</button>
     </div>
 
-</form>
+
 
 
 </body>
